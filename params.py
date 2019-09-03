@@ -10,13 +10,6 @@ batch_size = 50
 image_size = 64
 test_batch_size = 1000
 
-# params for source dataset
-src_dataset = "SVHN"
-src_model_trained = True
-
-# params for target dataset
-tgt_dataset = "MNIST"
-tgt_model_trained = True
 
 # params for setting up models
 model_root = "snapshots"

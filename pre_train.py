@@ -2,12 +2,12 @@
 from __future__ import print_function
 import torch
 import torch.nn.functional as F
-from DigitTransfer.adda.EnDecoder import *
-from DigitTransfer.adda.DataSet import *
+from EnDecoder import *
+from DataSet import *
 import os
-import DigitTransfer.adda.params as args
-from DigitTransfer.adda.eval import test_model
-from DigitTransfer.adda.utils import *
+import params as args
+from eval import test_model
+from utils import *
 from torch.optim import lr_scheduler
 
 def train_src(encoder, classifier, train_loader, optimizer, epoch):

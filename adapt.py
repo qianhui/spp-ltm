@@ -5,10 +5,10 @@ import os
 import torch
 import torch.optim as optim
 import params
-from DigitTransfer.adda.eval import test_model
-from DigitTransfer.adda.utils import getTargetEncoderPath, getTargetDiscriminatorPath, getSourceEncoderPath, getSourceClassifierPath
-from DigitTransfer.adda.EnDecoder import *
-from DigitTransfer.adda.DataSet import *
+from eval import test_model
+from utils import getTargetEncoderPath, getTargetDiscriminatorPath, getSourceEncoderPath, getSourceClassifierPath
+from EnDecoder import *
+from DataSet import *
 
 
 def train_tgt(src_encoder, tgt_encoder, critic,

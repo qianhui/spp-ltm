@@ -2,12 +2,12 @@
 from __future__ import print_function
 import torch
 import torch.nn.functional as F
-from DigitTransfer.adda.EnDecoder import *
-from DigitTransfer.adda.DataSet import *
-from DigitTransfer.DigitSets.DataSet import getAllTest
+from EnDecoder import *
+from DataSet import *
+from DataSet import getAllTest
 import os
-import DigitTransfer.adda.params as args
-from DigitTransfer.adda.utils import getTargetEncoderPath, getTargetDiscriminatorPath, getSourceEncoderPath, getSourceClassifierPath
+import params as args
+from utils import getTargetEncoderPath, getTargetDiscriminatorPath, getSourceEncoderPath, getSourceClassifierPath
 
 def test_model(encoder, classifier, test_loader):
     encoder.to(args.device)
